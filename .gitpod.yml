@@ -5,6 +5,10 @@ ports:
   - port: 1313
     onOpen: ignore
 
+tasks:
+  - init: >
+      brew install hugo &&
+      yarn install
 github:
   prebuilds:
     branches: false
