@@ -17,7 +17,11 @@
     {{ end }}
   </head>
 
-  <body>
-    {{ block "main" . }}{{ end }}
+  <body class="font-system text-lg">
+    {{ partial "header" . }}
+    <div class="flex flex-col w-full justify-center items-center p-4">
+      {{ block "main" . }}{{ end }}
+    </div>
+    {{ partial "footer" . }}
   </body>
 </html>
