@@ -1,4 +1,4 @@
-image: klakegg/hugo:0.83.1-ubuntu
+image: gitpod/workspace-full
 
 ports:
   # Hugo server
