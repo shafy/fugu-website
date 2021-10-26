@@ -11,5 +11,5 @@ tasks:
 
 github:
   prebuilds:
-    branches: false
+    branches: true
     pullRequests: true
