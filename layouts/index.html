@@ -3,36 +3,36 @@
     <h1 class="text-3xl md:border-b-4 md:border-green-300 mx-auto mb-6 text-center">
       Product analytics, simple and privacy-friendly
     </h1>
-    <p>
+    <p class="text-xl text-center">
       Fugu helps you to better understand how users use your product,
-      without invading privacy.
+      without invading their privacy.
     </p>
     <img src="/images/fugu_screenshot_main.png" class="mt-2">
     <a
       href="https://app.fugu.lol/users/sign_up"
-      class="bg-green-500 text-white font-bold text-sm rounded py-3 px-4 mx-auto mt-4
+      class="bg-green-500 text-white font-bold text-base rounded py-3 px-4 mx-auto mt-4
           hover:bg-green-300 cursor-pointer no-underline"
     >
       GET STARTED
     </a>
     <div class="text-sm text-gray-600 mx-auto mt-2 mb-4 text-center">
       Fugu costs $9/month. Start tracking test events for free, subscribe for live mode.
-      Or, <a href="#self-hosting">host it youself</a> for free.
+      Or, <a href="#self-hosting">host it yourself</a> for free.
     </div>
     <h2 class="mx-auto border-b-4 border-green-300">
       Tell me more!
     </h2>
     <p>
       I've built Fugu because I was missing a simple product analytics tool that's affordable
-      and has privacy-friendliness built right in. Fugu is
+      and has privacy baked in. Fugu is
       <a href="https://github.com/shafy/fugu" target="_blank">open-source</a> and
       you can host it yourself if you want.
     </p>
     <p>
-      Fugu's focus is on privacy-friendly and simplicity. This means a couple of things.
+      The focus on privacy-friendliness and simplicity translates to a few things:
       First, Fugu never tracks any personally identifiable information such as IP addresses.
       Second, Fugu is made for people who don't need fancy product analytics tools but prefer
-      a set of easy-to-use over a complex user experience.
+      a set of easy-to-use features over a complex user experience.
     </p>
     <p>
       Fugu is 100% self-funded. We will never raise venture capital and never sell your data
@@ -57,7 +57,7 @@
       and can optionally provide event properties.
       Your request body could look like this:
     </p>
-    <pre class="bg-gray-200 rounded w-full p-4 my-4"><code class="text-sm">{
+    <pre class="bg-gray-900 text-white rounded w-full p-4 my-4"><code class="text-sm">{
   "api_key": "very_secret",
   "name": "Fun event",
   "properties": {
@@ -74,8 +74,7 @@
     </h2>
     <p>
       Fugu focuses on simplicity and therefore provides a small set of features. We believe that
-      these are enough for most use cases, and don't want to clutter the experience with
-      edge case features. Check out our <a href="#roadmap">roadmap</a> to see what's coming.
+      these are enough for most use cases. Check out our <a href="#roadmap">roadmap</a> to see what's coming.
     </p>
     <h3>Event tracking</h3>
     <img src="/images/fugu_screenshot_events.png" class="mt-2">
@@ -88,9 +87,9 @@
       Events have optional properties that consist of keys and values that you can
       set almost arbitrarily. In Fugu, you can break down each property by its different values
       to better understand what's going on. For example, you might track a "platform" property
-      for your "Sign up" event. The "platform" property could have different values, such as "android"
+      for your "Clicked Payment Button" event. The "platform" property could have different values, such as "android"
       "ios", and "web". By breaking down your event by this property value, you will better
-      understand where your sign ups are coming from.
+      understand where your payment button clicks are coming from.
     </p>
     <h3>Time aggregation</h3>
     <img src="/images/fugu_screenshot_agg.png" class="mt-2">
@@ -111,11 +110,17 @@
     <p>
       Here are the key features that we are working on (no specific order):
       <ul class="list-disc list-inside">
-        <li>Select time range</li>
         <li>Conversion funnels</li>
         <li>Retention analysis</li>
         <li>Unique events per user</li>
+        <li>Export data</li>
+        <li>Filter by property value</li>
       </ul>
+    </p>
+    <p>
+      Missing something? Let me know on
+      <a href="https://twitter.com/canolcer">Twitter</a> or open a issue on
+      <a href="https://github.com/shafy/fugu/issues">GitHub</a>.
     </p>
     <h2 class="mx-auto border-b-4 border-green-300">
       Why should I NOT use Fugu?
