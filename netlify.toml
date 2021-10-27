@@ -1,0 +1,39 @@
+[build]
+publish = "public"
+command = "hugo --gc"
+
+[context.production.environment]
+HUGO_VERSION = "0.88.1"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "hugo --gc --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.88.1"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --gc --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.88.1"
+
+[context.branch-deploy]
+command = "hugo --gc -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.88.1"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Permissions-Policy = "interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubdomains; preload"
+
+
+
