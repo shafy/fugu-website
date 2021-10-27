@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/shafy/fugu-website.git",
   "author": "Can Olcer <canolcer@hey.com>",
-  "license": "GNU AFFERO GPLV3",
+  "license": "AGPL-3.0-only",
   "dependencies": {
     "autoprefixer": "^10.3.7",
     "postcss": "^8.3.11",

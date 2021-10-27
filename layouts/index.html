@@ -1,3 +1,145 @@
 {{ define "main" }}
-  <h1 class="container mx-auto mt-5 text-3xl">Hello from the other side!</h1>
+  <div class="flex flex-col justify-center items-start max-w-prose">
+    <h1 class="text-3xl md:border-b-4 md:border-green-300 mx-auto mb-6 text-center">
+      Product analytics, simple and privacy-friendly
+    </h1>
+    <p class="text-xl text-center">
+      Fugu helps you to better understand how users use your product,
+      without invading their privacy.
+    </p>
+    <img src="/images/fugu_screenshot_main.png" class="mt-2">
+    <a
+      href="https://app.fugu.lol/users/sign_up"
+      class="bg-green-500 text-white font-bold text-base rounded py-3 px-4 mx-auto mt-4
+          hover:bg-green-300 cursor-pointer no-underline"
+    >
+      GET STARTED
+    </a>
+    <div class="text-sm text-gray-600 mx-auto mt-2 mb-4 text-center">
+      Fugu costs $9/month. Start tracking test events for free, subscribe for live mode.
+      Or, <a href="#self-hosting">host it yourself</a> for free.
+    </div>
+    <h2 class="mx-auto border-b-4 border-green-300">
+      Tell me more!
+    </h2>
+    <p>
+      I've built Fugu because I was missing a simple product analytics tool that's affordable
+      and has privacy baked in. Fugu is
+      <a href="https://github.com/shafy/fugu" target="_blank">open-source</a> and
+      you can host it yourself if you want.
+    </p>
+    <p>
+      The focus on privacy-friendliness and simplicity translates to a few things:
+      First, Fugu never tracks any personally identifiable information such as IP addresses.
+      Second, Fugu is made for people who don't need fancy product analytics tools but prefer
+      a set of easy-to-use features over a complex user experience.
+    </p>
+    <p>
+      Fugu is 100% self-funded. We will never raise venture capital and never sell your data
+      to third parties (or use it in any way). The only revenue stream is the $9/month
+      subscription fee that we charge to our customers. Our servers are located in the Germany and
+      your data doesn't leave the EU.
+    </p>
+    <h2 class="mx-auto border-b-4 border-green-300">
+      How much does it cost?
+    </h2>
+    <p>
+      The cloud version of Fugu has one price tier and it costs $9/month.
+      In the cloud version, you automatically get all updates
+      and bug fixes, and can track up to 1 million events per month. Self-hosting is free.
+    </p>
+    <h2 class="mx-auto border-b-4 border-green-300">
+      How does it work?
+    </h2>
+    <p>
+      Fugu has an event-based tracking system. Every time you want to track an event,
+      you call the Fugu API from your app. In your request, you need to provide an event name
+      and can optionally provide event properties.
+      Your request body could look like this:
+    </p>
+    <pre class="bg-gray-900 text-white rounded w-full p-4 my-4"><code class="text-sm">{
+  "api_key": "very_secret",
+  "name": "Fun event",
+  "properties": {
+    "color": "Blue",
+    "type": "Oak"
+  }
+}</code></pre>
+    <p>
+      Once you've started tracking events, you can log in to your Fugu account and
+      analyze your data.
+    </p>
+    <h2 class="mx-auto border-b-4 border-green-300">
+      Features
+    </h2>
+    <p>
+      Fugu focuses on simplicity and therefore provides a small set of features. We believe that
+      these are enough for most use cases. Check out our <a href="#roadmap">roadmap</a> to see what's coming.
+    </p>
+    <h3>Event tracking</h3>
+    <img src="/images/fugu_screenshot_events.png" class="mt-2">
+    <p>
+      This is the fundament of Fugu. All you need to do is sent Fugu your events.
+    </p>
+    <h3 class="text-left">Property value breakdown</h3>
+    <img src="/images/fugu_screenshot_properties.png" class="mt-2">
+    <p>
+      Events have optional properties that consist of keys and values that you can
+      set almost arbitrarily. In Fugu, you can break down each property by its different values
+      to better understand what's going on. For example, you might track a "platform" property
+      for your "Clicked Payment Button" event. The "platform" property could have different values, such as "android"
+      "ios", and "web". By breaking down your event by this property value, you will better
+      understand where your payment button clicks are coming from.
+    </p>
+    <h3>Time aggregation</h3>
+    <img src="/images/fugu_screenshot_agg.png" class="mt-2">
+    <p>
+      You can choose to display your events aggregated by day, week, month or year.
+      This helps you to zoom in and out of your data to better grasp micro and macro trends.
+    </p>
+    <h3>Privacy</h3>
+    <p>
+      Fugu never tracks any personally identifiable information such as IP addresses
+      or unique users. I believe it's well possible to understand how users use your product
+      without invading their privacy.
+
+    </p>
+    <h2 class="mx-auto border-b-4 border-green-300" id="roadmap">
+      Roadmap
+    </h2>
+    <p>
+      Here are the key features that we are working on (no specific order):
+      <ul class="list-disc list-inside">
+        <li>Conversion funnels</li>
+        <li>Retention analysis</li>
+        <li>Unique events per user</li>
+        <li>Export data</li>
+        <li>Filter by property value</li>
+      </ul>
+    </p>
+    <p>
+      Missing something? Let me know on
+      <a href="https://twitter.com/canolcer">Twitter</a> or open a issue on
+      <a href="https://github.com/shafy/fugu/issues">GitHub</a>.
+    </p>
+    <h2 class="mx-auto border-b-4 border-green-300">
+      Why should I NOT use Fugu?
+    </h2>
+    <p>
+      Fugu's focus on simplicity allows us to deliver a solid product at a fair price.
+      However, this also means that we focus only on a small set of analytics features.
+      I think these features cover most needs of indie hackers or smaller teams.
+      You shouldn't buy Fugu if you want features such as more complex reports, saving dashboards,
+      integrations with other tools or enterprise features like SSO and access control.
+    </p>
+    <h2 class="mx-auto border-b-4 border-green-300" id="self-hosting">
+      Self-hosting
+    </h2>
+    <p>
+      Fugu is open-source and you are welcome to host it yourself, for free - no strings attached.
+      I think this is ideal for folks who have very specific data and privacy requirements or
+      want to go over the 1 million events per month limit.
+      For most customers, using the managed version will be much easier and probably cheaper.
+    </p>
+  </div>
 {{ end }}

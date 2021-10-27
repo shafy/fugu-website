@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-2xl mt-4 mb-2 font-medium
+}
+
+h2 {
+  @apply text-xl mt-4 mb-2 font-medium
+}
+
+h3 {
+  @apply mt-3 font-medium
+}
+
+p {
+  @apply my-2
+}
+
+a {
+  @apply underline hover:text-green-500;
+}
