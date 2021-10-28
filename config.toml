@@ -2,5 +2,7 @@ baseURL = "https://fugu.lol/"
 languageCode = "en-us"
 title = "Fugu"
 
+disableKinds = ["section"]
+
 [params]
   description = "Fugu is a simple and privacy-friendly product analytics tool that helps you better understand your users."
