@@ -23,7 +23,9 @@ You are responsible for any activity that occurs under your account (even by oth
 
 You may not use our service for any illegal purpose or to violate any laws in your jurisdiction.
 
-You must provide your legal full name and a valid email address in order to complete the signup process.
+You must provide your legal full name and a valid email address in order to complete the signup and payment process.
+
+You may not track any personally identifiable information (PII) with Fugu. Specifically, you may not use PII in project names, event names, property names and property values.
 
 You must be a human. Accounts registered by bots or other automated methods are not permitted.
 
@@ -106,6 +108,6 @@ This agreement shall be governed by the laws of Germany, and the courts of Germa
 
 If you have a question about any of the Terms of Service, please contact us: canolcer@hey.com.
 
-Last updated: October 26, 2021.
+Last updated: January 21, 2022.
 
 Adapted from the [Plausible's terms](https://plausible.io/terms) / [AGPLv3](https://github.com/plausible/analytics/blob/master/LICENSE.md)
