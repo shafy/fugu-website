@@ -24,14 +24,14 @@
     <meta property="og:title" content="{{ $title }}">
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:image" content="{{ .Site.BaseURL }}images/fugu_screenshot_main.png" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/fugu_screenshot_main.jpg" />
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{{ $title }}" />
     <meta name="twitter:description" content="{{ $description }}" />
     <meta name="twitter:url" content="{{ .Permalink }}" />
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/fugu_screenshot_main.png" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/fugu_screenshot_main.jpg" />
     <meta name="twitter:site" content="@canolcer" />
 
     {{ $styles := resources.Get "css/main.css" | postCSS }}
