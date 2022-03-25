@@ -21,3 +21,7 @@ p {
 a {
   @apply underline hover:text-green-500;
 }
+
+.iframe-container {
+  @apply w-full h-[950px] md:h-[720px]
+}
