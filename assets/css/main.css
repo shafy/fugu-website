@@ -23,5 +23,5 @@ a {
 }
 
 .iframe-container {
-  @apply w-full h-[1150px] md:h-[1000px]
+  @apply w-full h-[1150px] md:h-[910px]
 }
