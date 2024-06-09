@@ -34,12 +34,12 @@
     <meta name="twitter:image" content="{{ .Site.BaseURL }}images/fugu_screenshot_main.jpg" />
     <meta name="twitter:site" content="@canolcer" />
 
-    {{ $styles := resources.Get "css/main.css" | postCSS }}
+    {{ $styles := resources.Get "css/main.css" }}
 
-    {{ if .Site.IsServer }}
+    {{ if hugo.IsServer }}
       <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
     {{ else }}
-      {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+      {{ $styles := $styles | fingerprint | resources.PostProcess }}
       <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
     {{ end }}
 
@@ -48,11 +48,11 @@
     {{ end }}
   </head>
 
-  <body class="font-system text-base">
+  <body>
     {{ partial "header" . }}
-    <div class="flex flex-col w-full justify-center items-center px-4 pb-4 pt-2">
+    <main>
       {{ block "main" . }}{{ end }}
-    </div>
+    </main>
     {{ partial "footer" . }}
   </body>
 </html>
